@@ -1,0 +1,68 @@
+:root {
+    --black-carbon: #1C1C1C; /* Negro carbón */
+    --dark-gray: #4B4B4B;    /* Gris oscuro */
+    --navy-blue: #001F3F;    /* Azul marino */
+    --emerald-green: #00972d; /* Verde esmeralda */
+    --burgundy-red: #7A1B2A; /* Rojo burdeos */
+    --white: #ffffff;
+  }
+  
+  body {
+    background-color: var(--black-carbon);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--white);
+  }
+  
+  .counter-container {
+    width: 60%; /* Más ancho */
+    height: 60%; /* Más alto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navy-blue);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .counter-title {
+    font-size: 3em; /* Tamaño de fuente aumentado */
+    margin-bottom: 20px;
+    color: var(--emerald-green);
+  }
+  
+  .counter-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .btn {
+    background-color: var(--burgundy-red);
+    border: none;
+    color: var(--white);
+    font-size: 2em; /* Botones más grandes */
+    padding: 15px 30px; /* Más espacio en los botones */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: var(--dark-gray);
+    transform: scale(1.1); /* Pequeño aumento al pasar el cursor */
+  }
+  
+  #count {
+    font-size: 4em; /* Fuente más grande para el contador */
+    font-weight: bold;
+    color: var(--white);
+  }
+  
