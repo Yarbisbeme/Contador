@@ -10,6 +10,7 @@ incrementButton.addEventListener("click", () => {
 });
 
 decrementButton.addEventListener("click", () => {
+  if (count === 0) {return}
   count--;
   updateCount();
 });
